@@ -1,2 +1,2 @@
-# LTW
-Lets Do something by Learning Teaching And Working
+# Learning Teaching And Working
+This is a comunity project. Lets see what can do...
