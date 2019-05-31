@@ -5,6 +5,7 @@
     var variabeName dataType= value*
 ## Data Type
 There are several data types in Go. These are as following
+
 |  type | Use  | zero-value  |
 |----|:------|---:|
 |bool|Boolean data type. It can store value `true` or `false`.| false|
