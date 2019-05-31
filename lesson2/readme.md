@@ -1,10 +1,13 @@
 # Lesson 2 - Go variable and constant
 *A variable is a storage unit of a particular type which has a name, storage address and value and constant is a variable with fixed value.*
 ## Declaring a variable
-*To declare a variable you have to follow the above syntax 
-    var variabeName dataType= value*
-## Data Type
-There are several data types in Go. These are as following
+To declare a variable you have to follow the above syntax:
+
+    var variabeName dataType= value
+    Example:
+    var myVar int = 7
+## Data Types
+Data types is a particular kind of data item which has particular attribute, as defined by the values it can take. There are several data types in Go. These are as following
 
 |  type | Use  | zero-value  |
 |----|:------|---:|
