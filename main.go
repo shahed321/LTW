@@ -1,9 +1,9 @@
 package main
 
-import (
-	"github.com/shahed321/ltw/lesson1"
-)
+import "fmt"
 
 func main() {
-	lesson1.Lesson1()
+	var myVal = 6.5
+
+	fmt.Println(myVal)
 }
