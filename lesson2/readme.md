@@ -2,10 +2,10 @@
 *A variable is a storage unit of a particular type which has a name, storage address and value*
 ## Data Type
 |  type | Use  | zero-value  |
-|---|---|---|---|---|
+|----|:------|:---|
 |bool|Boolean data type. It can store value `true` or `false`.| false|
-"string", "String data type. It can store UTF-8 string. All strings in go are UTF-8 by default. Unlike JavaScript, string is only encapsulated in double quotes.", "empty string"
-"int", "Integer data type. It can store 32-bit or 64-bit signed integer. A 32-bit system will allocate 32 bits of memory and 64-bit system will allocate 64 bits of memory. Hence 32-bit system can store -2147483648 to 2147483647 and 64-bit system can store -9223372036854775808 to 9223372036854775807.", "0"
+|string|String data type. It can store UTF-8 string. All strings in go are UTF-8 by default. Unlike JavaScript, string is only encapsulated in double quotes.|empty string|
+|int|Integer data type. It can store 32-bit or 64-bit signed integer. A 32-bit system will allocate 32 bits of memory and 64-bit system will allocate 64 bits of memory. Hence 32-bit system can store -2147483648 to 2147483647 and 64-bit system can store -9223372036854775808 to 9223372036854775807.|0|
 "uint", "Integer data type. Same as `int`, `uint` can store 32 bits or 64 bits **unsigned** integer.", "0"
 "int8", "Integer data type. System will allocate 8 bits of memory to store an integer. Hence it can store values between -128 to 127.", "0"
 "uint8", "Integer data type. Same as `int8`, `uint8` can store 8-bit **unsigned** integer. Hence it can store values between 0 to 255.", "0"
