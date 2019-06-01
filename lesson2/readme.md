@@ -72,3 +72,101 @@ Or pointer is a way to grab value from a variable address
         <h2>Lesson 2 Variables and Constant</h2>
         <p>%s</p>`, myVar)
     }
+
+## variable's Initial Value
+golang's initial value is optional
+you can declare a variable without initial value
+    var myVar int
+    //leter you can assign value to that variable
+    myVar = 6
+
+## zero value
+Unlike other programming languages where variables hold null or undefined values when not initialized with any value, Go gives them zero-value of their respective types. As from the above table, boolean gets false value and integer gets 0 value.
+
+    var myInteger int
+    fmt.Println(myInteger)
+    var myVar bool
+    fmt.Println(bool)
+
+## Variable name convention
+Go recommends writing variable names in simple word or camelCase. Even under_score variable names are valid, they are not idiomatic.
+
+## Type inference
+    var myVar= 5
+    // golang will automatically picup the type.
+
+## Short-hand notation
+    //variableName := initialValue
+    myVar :=5
+
+## Multiple variable declarations
+    var var1, var2, var3 int
+
+    //you can assaign with initial value
+    var var1, var2, var3 int = 1, 2, 3
+
+    //you can declare also multiple type
+    var var1, var2, var3 = 1, 2.2, false
+
+    // you also can declare in multiple line
+    var(
+        var1 = 50
+        var2 = 25.22
+        var3 string = "Telefonía"
+        var4 bool
+    )
+
+## Type conversion
+    var1 := 10 // int
+    var2 := 10.5 // float
+    // illegal 
+    // var3 := var1 + var2
+    // legal
+    var3 := var1 + int(var2) // var3 == 20
+
+## Type aliasing
+    //type aliasName aliasTo
+    type float float64
+
+Example:
+
+    package server
+
+    import "fmt"
+
+    type float float64
+
+    func main() {
+	    var f float = 52.2
+	    fmt.Printf("f has value %v and type %T", f, f)
+    }
+
+## constant
+Constant is a variable in Go with a fixed value. Any attempt to change the value of a constant will cause a run-time panic. Constant must be declared with const keyword and an initial value.
+
+    //const const_name [data_type] = fixed_value
+    const myConstant = 70
+
+## Multiple constants declaration
+    //const const_1, const_2 = value_1, value_2
+    const const_1, const_2 = 80, 78
+
+    //const(
+	    a = 1 // a == 1
+	    b = 2 // b == 2
+	    c     // c == 2
+	    d     // d == 2
+    )
+## iota
+Go provides a keyword iota that can be used when declaring enumerated constants. This keyword yields an incremented value by 1 starting from 0, each time it is used.
+
+    const(
+        a = iota // a == 0
+        b = iota // b == 1
+        c = iota // c == 2
+        d        // d == 3 (implicitely d = iota)
+    )
+## Numeric Expressions
+    var a = 11/2 // a == 5
+    var a = 11.0/2 // a == 5.5
+    var b = float32(11)/2 // a == 5.5
