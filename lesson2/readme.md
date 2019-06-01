@@ -55,3 +55,20 @@ A pointer is a variable which holds the address of variable.
 Or pointer is a way to grab value from a variable address
 
     fmt.Println(*p)
+
+# Testing Our variable in Practical way
+
+    package server
+
+    import "net/http"
+
+    func Serve(){
+        http.HandleFunc("/", "Index_Handler")
+        http.ListenAndServe(":8000", nil)
+    }
+
+    func Index_Handler(w http.ResponseWriter, r *http.Request){
+        fmt.Fprintf(w, `<h1>LTW Server is working</h1>
+        <h2>Lesson 2 Variables and Constant</h2>
+        <p>%s</p>`, myVar)
+    }
