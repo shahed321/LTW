@@ -3,9 +3,15 @@
 ## Declaring a variable
 To declare a variable you have to follow the above syntax:
 
-    var variabeName dataType= value
-    Example:
-    var myVar int = 7
+    //var variabeName dataType= value
+    //Integer type variable:
+    var myIn int = 7
+
+    //Boolean Type variable
+    var myBool bool = True
+
+    //Floating Point Variable
+    var myFloat float64 = 6.45
 ## Data Types
 Data types is a particular kind of data item which has particular attribute, as defined by the values it can take. There are several data types in Go. These are as following
 
@@ -30,3 +36,22 @@ Data types is a particular kind of data item which has particular attribute, as 
 |byte|Alias for `uint8`.|0|
 |rune|Alias for `int32`. It represents a Unicode code point.|0|
 |error|Error data type. It is be used to store error value.|nil|
+
+# Pointer And variable Address
+variable address is the location where a variable is stored.
+
+    //to see a variable address just you need to put amparsand & sign infront of variable name
+    var myVar int = 7
+    fmt.Println(&myVar)
+
+A pointer is a variable which holds the address of variable.
+
+    //Pointer variable 
+    var myVar int = 9
+    var p = &myVar
+
+    fmt.Println(p)
+
+Or pointer is a way to grab value from a variable address
+
+    fmt.Println(*p)
