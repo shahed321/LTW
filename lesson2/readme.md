@@ -123,6 +123,26 @@ Go recommends writing variable names in simple word or camelCase. Even under_sco
     // var3 := var1 + var2
     // legal
     var3 := var1 + int(var2) // var3 == 20
+### float and String conversion.
+    package main
+
+    import (
+	    "fmt"
+	    "strconv"
+    )
+
+    func main() {
+	    f := "3.14159265"
+	    s, err := strconv.ParseFloat(f, 32)
+	    if err != nil{
+		    fmt.Println(err)
+	    }
+	
+	    fmt.Printf("Type of var %T and value %f \n", s,s)
+	    //y := fmt.Sprintf("%.6f", s)
+        y := strconv.FormatFloat(s, 'f', 6, 64)
+	    fmt.Printf("Type %T value %s", y, y)
+    }
 
 ## Type aliasing
     //type aliasName aliasTo
